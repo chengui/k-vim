@@ -16,8 +16,8 @@ filetype off " required! turn off
 
 " inspired by spf13, 自定义需要的插件集合
 if !exists('g:bundle_groups')
-    " let g:bundle_groups=['python', 'javascript', 'markdown', 'html', 'css', 'tmux', 'beta', 'json', 'nginx', 'golang', 'ruby', 'less', 'php', 'coffeescript', 'shell']
-    let g:bundle_groups=['python', 'javascript', 'markdown', 'html', 'css', 'tmux', 'beta']
+    let g:bundle_groups=['python', 'javascript', 'markdown', 'html', 'css', 'tmux', 'beta', 'json', 'nginx', 'golang', 'ruby', 'less', 'php', 'coffeescript', 'lua']
+    " let g:bundle_groups=['python', 'javascript', 'markdown', 'html', 'css', 'tmux', 'beta']
 endif
 
 " ----------------------------------------------------------------------------
@@ -265,13 +265,19 @@ endif
 
 if count(g:bundle_groups, 'html')
     " ###### emmet HTML complete #########
-    " Plug "mattn/emmet-vim"
+    Plug 'mattn/emmet-vim'
 endif
 
 if count(g:bundle_groups, 'nginx')
     " Plug 'evanmiller/nginx-vim-syntax'
 endif
 
+if count(g:bundle_groups, 'lua')
+    " Plug 'xolox/vim-misc'
+    " Plug 'xolox/vim-lua-ftplugin'
+    " Plug 'WolfgangMehner/lua-support'
+    Plug 'tbastos/vim-lua'
+endif
 
 " this is just for beta version
 if count(g:bundle_groups, 'beta')
