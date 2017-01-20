@@ -422,6 +422,8 @@ call plug#end()
 
 
 " ultisnips {{{
+    let g:snips_author                 = "Gui Chen"
+    let g:snips_author_email           = "gui.g.chen@gmail.com"
     let g:UltiSnipsExpandTrigger       = "<tab>"
     let g:UltiSnipsJumpForwardTrigger  = "<tab>"
     let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
